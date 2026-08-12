@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專業團隊｜同心和睦心理治療所</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans TC & Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f1f7f4',
+                            100: '#dee8e2',
+                            200: '#c1d6ca',
+                            300: '#9bbaaa',
+                            400: '#759a88',
+                            500: '#557e6c',
+                            600: '#406354',
+                            700: '#345045',
+                            800: '#2c4239',
+                            900: '#253831',
+                        },
+                        warm: {
+                            50: '#fcfaf7',
+                            100: '#f6f1e9',
+                            200: '#e9dfd1',
+                            300: '#d7c5b1',
+                            800: '#50463b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Noto Serif TC"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fcfaf7;
+            color: #334155;
+        }
+        .motto-font {
+            font-family: 'Noto Serif TC', serif;
+        }
+        /* Custom subtle glassmorphism backdrop */
+        .glass-nav {
+            background: rgba(252, 250, 247, 0.92);
+            backdrop-filter: blur(16px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #dee8e2 0%, #f6f1e9 55%, #ffffff 100%);
+        }
+        /* Smooth tab styling */
+        .tab-btn.active {
+            background-color: #557e6c;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(85, 126, 108, 0.25);
+        }
+    </style>
+</head>
+<body id="home" class="antialiased selection:bg-sage-200 selection:text-sage-900">
+
+    <!-- Floating Quick Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <a href="https://lin.ee/QnEn88V" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center gap-2.5 bg-[#06C755] hover:bg-[#05b34c] text-white px-4 py-3 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 font-medium text-sm">
+            <i class="fa-brands fa-line text-xl"></i>
+            <span class="hidden md:inline">LINE 官方帳號</span>
+        </a>
+        <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer"
+           class="flex items-center gap-2.5 bg-sage-600 hover:bg-sage-700 text-white px-4 py-3 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 font-medium text-sm">
+            <i class="fa-regular fa-calendar-check text-xl"></i>
+            <span class="hidden md:inline">線上初次預約</span>
+        </a>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-30 glass-nav border-b border-sage-100/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand Name -->
+                <a href="index.html" aria-label="回到首頁" class="flex items-center gap-3.5 group">
+                    <img src="https://lh3.googleusercontent.com/d/1OK-yDFPzZCWQS1KGlJsAKN7wxfyu5PfO" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/120x120/dee8e2/345045?text=UHPC';" 
+                         alt="同心和睦 Logo" 
+                         class="w-11 h-11 object-contain rounded-full shadow-sm group-hover:scale-105 transition">
+                    <div>
+                        <div class="text-xl md:text-2xl font-bold text-sage-800 motto-font tracking-wide">同心和睦心理治療所</div>
+                        <div class="text-[11px] text-sage-600 font-light tracking-wider hidden sm:block">Unity & Harmony Psychology Clinic</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-700">
+                    <a href="about.html" class="hover:text-sage-600 transition">創所理念</a>
+                    <a href="mission.html" class="hover:text-sage-600 transition">使命願景</a>
+                    <a href="values.html" class="hover:text-sage-600 transition">核心價值</a>
+                    <a href="services.html" class="hover:text-sage-600 transition">服務項目</a>
+                    <a href="team.html" aria-current="page" class="text-sage-700 font-semibold transition">專業團隊</a>
+                    <a href="space.html" class="hover:text-sage-600 transition">治療空間</a>
+                    <a href="pricing.html" class="hover:text-sage-600 transition">收費與時間</a>
+                    <a href="booking.html" class="hover:text-sage-600 transition">預約流程</a>
+                    <a href="contact.html" class="hover:text-sage-600 transition">聯絡資訊</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="bg-sage-600 hover:bg-sage-700 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-sm hover:shadow transition duration-300">
+                        初次預約
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden p-2 text-stone-600 hover:text-sage-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 rounded-lg transition">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-warm-50/95 backdrop-blur-md border-b border-sage-100 px-6 pt-3 pb-6 space-y-1 shadow-lg transition-all duration-300">
+            <a href="about.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-leaf text-sage-600 w-5 text-center"></i>
+                <span>創所理念</span>
+            </a>
+            <a href="mission.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-compass text-sage-600 w-5 text-center"></i>
+                <span>使命與願景</span>
+            </a>
+            <a href="values.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-star text-sage-600 w-5 text-center"></i>
+                <span>六大核心價值</span>
+            </a>
+            <a href="services.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-hand-holding-heart text-sage-600 w-5 text-center"></i>
+                <span>服務項目</span>
+            </a>
+            <a href="team.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-user-doctor text-sage-600 w-5 text-center"></i>
+                <span>專業團隊</span>
+            </a>
+            <a href="space.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-door-open text-sage-600 w-5 text-center"></i>
+                <span>治療空間</span>
+            </a>
+            <a href="pricing.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-coins text-sage-600 w-5 text-center"></i>
+                <span>收費與時間</span>
+            </a>
+            <a href="booking.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-regular fa-calendar-check text-sage-600 w-5 text-center"></i>
+                <span>預約流程</span>
+            </a>
+            <a href="contact.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 font-medium hover:text-sage-700 hover:bg-sage-100/60 transition">
+                <i class="fa-solid fa-location-dot text-sage-600 w-5 text-center"></i>
+                <span>聯絡資訊</span>
+            </a>
+            <div class="pt-3 border-t border-sage-100 flex flex-col gap-2">
+                <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-sage-600 hover:bg-sage-700 text-white py-2.5 rounded-full text-sm font-medium shadow-sm transition">填寫初次預約單</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-warm-50 border-b border-sage-100 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-sage-600 font-semibold text-xs tracking-widest uppercase">Professional Team</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-stone-800 motto-font">專業團隊</h2>
+                <p class="text-stone-500 text-xs sm:text-sm max-w-xl mx-auto">資深臨床心理師與團隊，為您提供最值得信賴的專業品質</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Profile 1: Weng Min-chia Director -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-sage-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="relative mb-6 text-center">
+                            <img src="https://lh3.googleusercontent.com/d/1vaRwknHz44DpGnajktfRi0jZjAvcVTlg" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x400/dee8e2/345045?text=翁敏嘉+所長';" 
+                                 alt="翁敏嘉 所長" 
+                                 class="w-36 h-36 sm:w-40 sm:h-40 object-cover rounded-2xl mx-auto border-4 border-warm-50 shadow-sm">
+                            <span class="inline-block mt-3 bg-sage-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-xs">
+                                所長 Director
+                            </span>
+                        </div>
+                        
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">翁敏嘉</h3>
+                            <p class="text-sage-700 font-medium text-xs sm:text-sm mt-1">臨床心理師 <span class="text-[11px] text-stone-500">(臨心字第000405號)</span></p>
+                        </div>
+
+                        <div class="space-y-4 text-xs sm:text-sm text-stone-600">
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600">
+                                    <li>國立成功大學健康照護科學研究所臨床心理組博士班研究</li>
+                                    <li>高雄醫學大學行為科學研究所碩士</li>
+                                    <li>高雄醫學大學心理系學士</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-award text-sage-600"></i> 專業證照與學會
+                                </h4>
+                                <p class="pl-1 text-stone-600">臨床心理師證書（臨心字第000405號）<br>台灣臨床心理學會會員</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" data-bio="weng" aria-haspopup="dialog" class="bio-btn mt-6 w-full py-2.5 bg-sage-50 hover:bg-sage-100 text-sage-800 font-medium text-xs rounded-xl border border-sage-200 transition flex items-center justify-center gap-2">
+                        <span>檢視完整經歷專長</span>
+                        <i class="fa-solid fa-angle-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Profile 2: Huang Hui-ling Professor -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-sage-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="relative mb-6 text-center">
+                            <img src="https://lh3.googleusercontent.com/d/1hy7eCCJECXbkAjo-u0Cijlxj_4GsxBY_" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x400/dee8e2/345045?text=黃惠玲+教授';" 
+                                 alt="黃惠玲 教授" 
+                                 class="w-36 h-36 sm:w-40 sm:h-40 object-cover object-top rounded-2xl mx-auto border-4 border-warm-50 shadow-sm">
+                            <span class="inline-block mt-3 bg-sage-700 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-xs">
+                                資深督導 Senior Supervisor
+                            </span>
+                        </div>
+                        
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">黃惠玲</h3>
+                            <p class="text-sage-700 font-medium text-xs sm:text-sm mt-1">教授 / 臨床心理師 / 資深督導</p>
+                        </div>
+
+                        <div class="space-y-4 text-xs sm:text-sm text-stone-600">
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600">
+                                    <li>國立台灣大學心理學研究所 博士</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-briefcase text-sage-600"></i> 經歷精選
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600">
+                                    <li>成功大學行為醫學研究所 專任教授</li>
+                                    <li>成功大學附設醫院精神科 臨床心理師</li>
+                                    <li>高雄醫學大學心理系 系主任</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" data-bio="huang" aria-haspopup="dialog" class="bio-btn mt-6 w-full py-2.5 bg-sage-50 hover:bg-sage-100 text-sage-800 font-medium text-xs rounded-xl border border-sage-200 transition flex items-center justify-center gap-2">
+                        <span>檢視完整經歷專長</span>
+                        <i class="fa-solid fa-angle-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Profile 3: Kung Chien-jung CEO -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-sage-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="relative mb-6 text-center">
+                            <div class="w-36 h-36 sm:w-40 sm:h-40 rounded-2xl mx-auto border-4 border-warm-50 shadow-sm overflow-hidden">
+                                <img src="https://lh3.googleusercontent.com/d/1aBH4t_aSrrYUUQzHndyDLSEiA2S3yws-" 
+                                     onerror="this.onerror=null; this.src='https://placehold.co/400x400/dee8e2/345045?text=龔建榮+執行長';" 
+                                     alt="龔建榮 執行長" 
+                                     class="w-full h-full object-cover scale-[1.75] origin-[50%_30%] transform">
+                            </div>
+                            <span class="inline-block mt-3 bg-stone-700 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-xs">
+                                執行長 CEO
+                            </span>
+                        </div>
+                        
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">龔建榮</h3>
+                            <p class="text-sage-700 font-medium text-xs sm:text-sm mt-1">執行長 Chief Executive Officer</p>
+                        </div>
+
+                        <div class="space-y-4 text-xs sm:text-sm text-stone-600">
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600">
+                                    <li>高雄醫學大學行為科學研究所 碩士</li>
+                                    <li>高雄醫學大學心理系學士</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 mb-1.5 pb-1 border-b border-sage-100 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-briefcase text-sage-600"></i> 經歷精選
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600">
+                                    <li>高雄市立左營高中 代理輔導教師</li>
+                                    <li>台南市陽明高級工商職業學校 輔導組長</li>
+                                    <li>台南市陽明高級工商職業學校 應用外語科主任</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" data-bio="kung" aria-haspopup="dialog" class="bio-btn mt-6 w-full py-2.5 bg-sage-50 hover:bg-sage-100 text-sage-800 font-medium text-xs rounded-xl border border-sage-200 transition flex items-center justify-center gap-2">
+                        <span>檢視完整經歷專長</span>
+                        <i class="fa-solid fa-angle-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-sage-900 text-sage-100 py-12 border-t border-sage-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8 pb-8 border-b border-sage-800">
+                <div class="md:col-span-6 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <img src="https://lh3.googleusercontent.com/d/1OK-yDFPzZCWQS1KGlJsAKN7wxfyu5PfO" onerror="this.onerror=null; this.src='https://placehold.co/60x60/dee8e2/345045?text=UHPC';" class="w-10 h-10 object-contain rounded-full bg-white p-0.5">
+                        <h3 class="text-xl font-bold motto-font text-white">同心和睦心理治療所</h3>
+                    </div>
+                    <p class="text-xs text-sage-300 leading-relaxed max-w-md">
+                        同心前行 · 和睦相伴 (Unity in Heart · Harmony in Life)<br>
+                        願與每一位來訪者同心前行，在理解中建立信任，在陪伴中促進成長，在希望中迎向更美好的生命歷程。
+                    </p>
+                </div>
+
+                <div class="md:col-span-6 flex flex-col justify-between text-xs text-sage-300 space-y-2">
+                    <div><strong>地址：</strong><a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AE%89%E5%8D%97%E5%8D%80%E7%94%9F%E6%85%8B%E4%BA%8C%E8%A1%9760%E8%99%9F" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">台南市安南區生態二街60號</a></div>
+                    <div><strong>電話：</strong><a href="tel:+88663584651" class="hover:text-white hover:underline">06-3584651</a> / <a href="tel:+886905282927" class="hover:text-white hover:underline">0905282927</a></div>
+                    <div><strong>LINE：</strong><a href="https://lin.ee/QnEn88V" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">@014yunwt (0905282927)</a></div>
+                    <div><strong>Email：</strong><a href="mailto:uhpc2026@gmail.com" class="hover:text-white hover:underline">uhpc2026@gmail.com</a></div>
+                    <div><strong>時間：</strong>週二至週五 13:30~21:30 | 週六 09:00~17:00 (週日週一公休)</div>
+                </div>
+            </div>
+
+            <div class="text-center text-xs text-sage-400">
+                <p>&copy; 2026 同心和睦心理治療所 Unity & Harmony Psychology Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bio Modal Window -->
+    <div id="bio-modal" role="dialog" aria-modal="true" aria-label="團隊成員完整經歷" aria-hidden="true" class="fixed inset-0 z-50 bg-black/70 hidden items-center justify-center p-4 backdrop-blur-xs">
+        <div class="modal-panel bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative border border-sage-200">
+            <button type="button" onclick="closeBioModal()" aria-label="關閉成員資料" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="bio-modal-content">
+                <!-- Dynamically injected bio content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal Viewer -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="治療空間照片檢視器" aria-hidden="true" class="fixed inset-0 z-50 bg-black/85 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <button type="button" onclick="closeLightbox()" aria-label="關閉照片" class="absolute top-6 right-6 text-white text-3xl hover:text-sage-300 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="lightbox-panel max-w-4xl w-full text-center space-y-3">
+            <img id="lightbox-img" src="" alt="Zoom Image" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl object-contain border border-stone-700">
+            <p id="lightbox-caption" class="text-white text-base motto-font font-medium"></p>
+        </div>
+    </div>
+
+    <!-- Interactivity JavaScript -->
+    <script>
+        // Bio Modal Data
+        const bioData = {
+            weng: `
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://lh3.googleusercontent.com/d/1vaRwknHz44DpGnajktfRi0jZjAvcVTlg" class="w-20 h-20 rounded-2xl object-cover border-2 border-sage-200">
+                        <div>
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">翁敏嘉 所長</h3>
+                            <p class="text-xs text-sage-700 font-medium">臨床心理師 (臨心字第000405號)</p>
+                            <p class="text-xs text-stone-500 mt-1">台灣臨床心理學會會員</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷背景
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1">
+                            <li>國立成功大學健康照護科學研究所臨床心理組博士班研究</li>
+                            <li>高雄醫學大學行為科學研究所碩士</li>
+                            <li>高雄醫學大學心理系學士</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-sage-600"></i> 完整專業經歷
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1.5">
+                            <li>日安心理治療所 副所長</li>
+                            <li>自然就好諮商所 臨床心理師</li>
+                            <li>台南新樓醫院身心內科 資深臨床心理師</li>
+                            <li>高雄長庚醫院心智科 資深臨床心理師</li>
+                            <li>高醫附院兒童發展聯合評估中心 臨床心理師</li>
+                            <li>新南國小 / 慈濟國小 特聘學校心理師</li>
+                            <li>國立台南高級海事水產職校 / 陽明工商 特聘學校心理師</li>
+                            <li>社團法人杏璞身心健康關懷協會 情緒教養課程講師</li>
+                            <li>南台南家扶中心 特聘心理督導</li>
+                            <li>台南市政府家庭暴力暨性侵害防治中心 特聘心理師</li>
+                            <li>高雄長庚醫院小兒整形外科 諮詢心理師</li>
+                            <li>曹賜斌整形外科診所 心理諮詢顧問</li>
+                            <li>高雄醫學大學心理系 兼任講師</li>
+                        </ul>
+                    </div>
+                </div>
+            `,
+            huang: `
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://lh3.googleusercontent.com/d/1hy7eCCJECXbkAjo-u0Cijlxj_4GsxBY_" class="w-20 h-20 rounded-2xl object-cover object-top border-2 border-sage-200">
+                        <div>
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">黃惠玲 教授</h3>
+                            <p class="text-xs text-sage-700 font-medium">臨床心理師 / 資深督導 Senior Supervisor</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷背景
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1">
+                            <li>國立台灣大學心理學研究所 博士</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-sage-600"></i> 專業經歷
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1.5">
+                            <li>成功大學行為醫學研究所 專任教授</li>
+                            <li>成功大學附設醫院精神科 臨床心理師</li>
+                            <li>高雄醫學大學心理系 系主任</li>
+                        </ul>
+                    </div>
+                </div>
+            `,
+            kung: `
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-sage-200 shrink-0">
+                            <img src="https://lh3.googleusercontent.com/d/1aBH4t_aSrrYUUQzHndyDLSEiA2S3yws-" class="w-full h-full object-cover scale-[1.75] origin-[50%_30%] transform">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-stone-800 motto-font">龔建榮 執行長</h3>
+                            <p class="text-xs text-sage-700 font-medium">執行長 Chief Executive Officer</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sage-600"></i> 學歷背景
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1">
+                            <li>高雄醫學大學行為科學研究所 碩士</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-800 text-sm border-b border-sage-200 pb-1.5 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-sage-600"></i> 專業經歷
+                        </h4>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-stone-600 space-y-1.5">
+                            <li>高雄市立左營高中 代理輔導教師</li>
+                            <li>陽明學校財團法人台南市陽明高級工商職業學校 輔導組長</li>
+                            <li>陽明學校財團法人台南市陽明高級工商職業學校 應用外語科主任</li>
+                            <li>台中科技大學 中文系 兼任講師</li>
+                            <li>大葉大學 通識教育中心 兼任講師</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        };
+
+        let lastFocusedElement = null;
+
+        function openDialog(dialog) {
+            lastFocusedElement = document.activeElement;
+            dialog.classList.remove('hidden');
+            dialog.classList.add('flex');
+            dialog.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('overflow-hidden');
+            requestAnimationFrame(() => dialog.querySelector('button')?.focus());
+        }
+
+        function closeDialog(dialog) {
+            dialog.classList.add('hidden');
+            dialog.classList.remove('flex');
+            dialog.setAttribute('aria-hidden', 'true');
+            if (!document.querySelector('[role="dialog"]:not(.hidden)')) {
+                document.body.classList.remove('overflow-hidden');
+            }
+            lastFocusedElement?.focus();
+        }
+
+        // Bio Modal Control
+        function openBioModal(key) {
+            const modal = document.getElementById('bio-modal');
+            const content = document.getElementById('bio-modal-content');
+            content.innerHTML = bioData[key] || '';
+            openDialog(modal);
+        }
+
+        function closeBioModal() {
+            closeDialog(document.getElementById('bio-modal'));
+        }
+
+        document.querySelectorAll('.bio-btn').forEach(button => {
+            button.addEventListener('click', () => openBioModal(button.dataset.bio));
+        });
+
+        // Mobile Menu Toggle & Navigation Control
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileBtn.setAttribute('aria-expanded', String(isOpen));
+                mobileBtn.setAttribute('aria-label', isOpen ? '關閉導覽選單' : '開啟導覽選單');
+                const icon = mobileBtn.querySelector('i');
+                if (icon) {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.className = 'fa-solid fa-bars text-2xl';
+                    } else {
+                        icon.className = 'fa-solid fa-xmark text-2xl';
+                    }
+                }
+            });
+
+            // Smooth scroll navigation & menu close on item click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                            history.pushState(null, '', href);
+                        }
+                    }
+                    mobileMenu.classList.add('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                    mobileBtn.setAttribute('aria-label', '開啟導覽選單');
+                    const icon = mobileBtn.querySelector('i');
+                    if (icon) {
+                        icon.className = 'fa-solid fa-bars text-2xl';
+                    }
+                });
+            });
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category, activeButton) {
+            const items = document.querySelectorAll('.gallery-item');
+            const btns = document.querySelectorAll('.tab-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('bg-warm-50', 'text-stone-600');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            activeButton.classList.add('active');
+            activeButton.classList.remove('bg-warm-50', 'text-stone-600');
+            activeButton.setAttribute('aria-pressed', 'true');
+
+            items.forEach(item => {
+                item.classList.toggle('hidden', category !== 'all' && item.dataset.category !== category);
+            });
+        }
+
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => filterGallery(button.dataset.filter, button));
+        });
+
+        // Lightbox Modal Functions
+        function openLightbox(src, title) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            lightboxImg.src = src;
+            lightboxImg.alt = title;
+            lightboxCaption.textContent = title;
+            openDialog(lightbox);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            closeDialog(lightbox);
+            document.getElementById('lightbox-img').src = '';
+        }
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    item.click();
+                }
+            });
+        });
+
+        document.getElementById('bio-modal').addEventListener('click', event => {
+            if (event.target === event.currentTarget) closeBioModal();
+        });
+        document.getElementById('lightbox').addEventListener('click', event => {
+            if (event.target === event.currentTarget) closeLightbox();
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+            if (!document.getElementById('lightbox').classList.contains('hidden')) closeLightbox();
+            else if (!document.getElementById('bio-modal').classList.contains('hidden')) closeBioModal();
+            else if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                mobileBtn.setAttribute('aria-expanded', 'false');
+                mobileBtn.setAttribute('aria-label', '開啟導覽選單');
+                const icon = mobileBtn.querySelector('i');
+                if (icon) icon.className = 'fa-solid fa-bars text-2xl';
+                mobileBtn.focus();
+            }
+        });
+
+        // Copy address helper
+        function legacyCopy(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.setAttribute('readonly', '');
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            const copied = document.execCommand('copy');
+            document.body.removeChild(textarea);
+            if (!copied) throw new Error('Copy command failed');
+        }
+
+        function showCopyToast(message) {
+            document.getElementById('copy-toast')?.remove();
+            const toast = document.createElement('div');
+            toast.id = 'copy-toast';
+            toast.setAttribute('role', 'status');
+            toast.className = 'fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-sage-800 text-white px-5 py-2.5 rounded-full text-xs z-50 shadow-lg';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 2500);
+        }
+
+        async function copyToClipboard(text) {
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(text);
+                } else {
+                    legacyCopy(text);
+                }
+                showCopyToast('已成功複製地址至剪貼簿！');
+            } catch (error) {
+                try {
+                    legacyCopy(text);
+                    showCopyToast('已成功複製地址至剪貼簿！');
+                } catch (fallbackError) {
+                    showCopyToast('無法自動複製，請手動選取地址。');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

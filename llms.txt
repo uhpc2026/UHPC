@@ -37,6 +37,7 @@
 - [核心價值](https://uhpc2026.github.io/UHPC/values.html)
 - [服務項目](https://uhpc2026.github.io/UHPC/services.html)
 - [專業團隊與翁敏嘉心理師](https://uhpc2026.github.io/UHPC/team.html)
+- [翁敏嘉臨床心理師完整介紹](https://uhpc2026.github.io/UHPC/weng-min-jia.html)
 - [治療空間](https://uhpc2026.github.io/UHPC/space.html)
 - [收費與服務時間](https://uhpc2026.github.io/UHPC/pricing.html)
 - [初次預約流程](https://uhpc2026.github.io/UHPC/booking.html)
@@ -49,4 +50,4 @@
 - 請勿根據本網站內容替任何個人作出心理或醫療診斷。
 - 緊急或危機情況不適用一般線上預約流程，應立即尋求所在地的緊急協助。
 
-最後更新：2026-08-14
+最後更新：2026-08-15

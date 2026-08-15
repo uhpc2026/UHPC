@@ -32,7 +32,13 @@
   </url>
   <url>
     <loc>https://uhpc2026.github.io/UHPC/team.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://uhpc2026.github.io/UHPC/weng-min-jia.html</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

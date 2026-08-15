@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tzuen90053024.github.io/UHPC/sitemap.xml
+Sitemap: https://uhpc2026.github.io/UHPC/sitemap.xml

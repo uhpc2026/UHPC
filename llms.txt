@@ -59,6 +59,7 @@
 - [收費與服務時間](https://uhpc2026.github.io/UHPC/pricing.html)
 - [初次預約流程](https://uhpc2026.github.io/UHPC/booking.html)
 - [聯絡資訊與交通](https://uhpc2026.github.io/UHPC/contact.html)
+- [最新消息｜同心和睦心理治療所開幕茶會](https://uhpc2026.github.io/UHPC/news.html)
 
 ## 使用與引用說明
 

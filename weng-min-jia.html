@@ -33,37 +33,98 @@
         body{font-family:"Noto Sans TC",sans-serif;background:#fcfaf7}.motto-font{font-family:"Noto Serif TC",serif}
         .glass-nav{background:rgba(252,250,247,.92);backdrop-filter:blur(16px)}
     </style>
+    <script defer src="navigation.js"></script>
 </head>
 <body class="text-stone-700 antialiased">
+    <!-- Header / Navigation -->
+    <!-- Header / Navigation -->
+    <!-- Header / Navigation -->
+    <!-- Header / Navigation -->
+    <!-- Header / Navigation -->
+    <!-- Header / Navigation -->
     <header class="sticky top-0 z-30 glass-nav border-b border-sage-100/80 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-20">
-            <a href="index.html" class="flex items-center gap-3.5 group" aria-label="返回同心和睦心理治療所首頁">
-                <img src="https://lh3.googleusercontent.com/d/1OK-yDFPzZCWQS1KGlJsAKN7wxfyu5PfO" onerror="this.onerror=null; this.src='https://placehold.co/120x120/dee8e2/345045?text=UHPC';" alt="同心和睦心理治療所 Logo" class="w-11 h-11 object-contain rounded-full shadow-sm group-hover:scale-105 transition">
-                <div><div class="text-xl md:text-2xl font-bold text-sage-800 motto-font tracking-wide">同心和睦心理治療所</div><div class="text-[11px] text-sage-600 font-light tracking-wider hidden sm:block">Unity &amp; Harmony Psychology Clinic</div></div>
-            </a>
-            <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-700" aria-label="主要導覽">
-                <a href="about.html" class="hover:text-sage-600 transition">創所理念</a>
-                <a href="mission.html" class="hover:text-sage-600 transition">使命願景</a>
-                <a href="values.html" class="hover:text-sage-600 transition">核心價值</a>
-                <a href="services.html" class="hover:text-sage-600 transition">服務項目</a>
-                <a href="team.html" class="text-sage-700 font-semibold transition">專業團隊</a>
-                <a href="space.html" class="hover:text-sage-600 transition">治療空間</a>
-                <a href="pricing.html" class="hover:text-sage-600 transition">收費與時間</a>
-                <a href="booking.html" class="hover:text-sage-600 transition">預約流程</a>
-                <a href="contact.html" class="hover:text-sage-600 transition">聯絡資訊</a>
-            </nav>
-            <div class="hidden sm:flex items-center gap-3"><a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="bg-sage-600 hover:bg-sage-700 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-sm hover:shadow transition duration-300">初次預約</a></div>
-            <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="開啟導覽選單" class="lg:hidden p-2 text-stone-600 hover:text-sage-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 rounded-lg transition"><i class="fa-solid fa-bars text-2xl"></i></button>
-          </div>
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center h-20 gap-3">
+                <a href="index.html" aria-label="回到首頁" class="flex items-center gap-3.5 group shrink-0">
+                    <img src="https://lh3.googleusercontent.com/d/1OK-yDFPzZCWQS1KGlJsAKN7wxfyu5PfO"
+                         onerror="this.onerror=null; this.src='https://placehold.co/120x120/dee8e2/345045?text=UHPC';"
+                         alt="同心和睦心理治療所 Logo"
+                         class="w-11 h-11 object-contain rounded-full shadow-sm group-hover:scale-105 transition">
+                    <div>
+                        <div class="text-lg md:text-2xl font-bold text-sage-800 motto-font tracking-wide whitespace-nowrap">同心和睦心理治療所</div>
+                        <div class="text-[11px] text-sage-600 font-light tracking-wider hidden sm:block">Unity &amp; Harmony Psychology Clinic</div>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex flex-1 items-center justify-start ml-3 xl:ml-5 gap-5 xl:gap-6 2xl:gap-8 text-base font-medium whitespace-nowrap" aria-label="主要導覽">
+                    <details class="desktop-dropdown relative group">
+                        <summary class="list-none cursor-pointer inline-flex items-center gap-1.5 py-3 hover:text-sage-600 transition text-stone-700">
+                            治療所理念 <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 rounded-2xl border border-sage-100 bg-warm-50 shadow-xl p-2.5 z-50">
+                            <a href="about.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">創所理念</a>
+                            <a href="mission.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">使命願景</a>
+                            <a href="values.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">核心價值</a>
+                        </div>
+                    </details>
+                    <details class="desktop-dropdown relative group">
+                        <summary class="list-none cursor-pointer inline-flex items-center gap-1.5 py-3 hover:text-sage-600 transition text-stone-700">
+                            服務與預約 <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 rounded-2xl border border-sage-100 bg-warm-50 shadow-xl p-2.5 z-50">
+                            <a href="services.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">服務項目</a>
+                            <a href="pricing.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">收費與時間</a>
+                            <a href="booking.html" class="block px-4 py-3 rounded-xl text-stone-700 hover:bg-sage-100/70 hover:text-sage-700 transition">預約流程</a>
+                            <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 rounded-xl text-sage-700 font-semibold hover:bg-sage-100/70 transition">初次預約表單</a>
+                        </div>
+                    </details>
+                    <a href="team.html" class="hover:text-sage-600 transition text-sage-700 font-semibold">專業團隊</a>
+                    <a href="space.html" class="hover:text-sage-600 transition text-stone-700">治療空間</a>
+                    <a href="news.html" class="hover:text-sage-600 transition text-stone-700">最新消息</a>
+                    <a href="contact.html" class="hover:text-sage-600 transition text-stone-700">聯絡資訊</a>
+                </nav>
+
+                <div class="hidden sm:block ml-auto lg:ml-1 shrink-0">
+                    <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="inline-flex bg-sage-600 hover:bg-sage-700 text-white px-3 xl:px-4 2xl:px-5 py-2.5 rounded-full text-sm font-medium shadow-sm hover:shadow transition">
+                        初次預約
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden ml-auto sm:ml-0 shrink-0 p-2 text-stone-600 hover:text-sage-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 rounded-lg transition">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
-        <nav id="mobile-menu" class="hidden lg:hidden border-t border-sage-100 bg-warm-50 px-4 py-4" aria-label="手機導覽">
-            <div class="max-w-7xl mx-auto grid grid-cols-2 gap-2 text-sm">
-                <a href="about.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">創所理念</a><a href="mission.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">使命願景</a>
-                <a href="values.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">核心價值</a><a href="services.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">服務項目</a>
-                <a href="team.html" class="px-3 py-2.5 rounded-xl bg-sage-100 text-sage-800 font-semibold">專業團隊</a><a href="space.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">治療空間</a>
-                <a href="pricing.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">收費與時間</a><a href="booking.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">預約流程</a>
-                <a href="contact.html" class="px-3 py-2.5 rounded-xl hover:bg-sage-100">聯絡資訊</a><a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-xl bg-sage-700 text-white text-center">初次預約</a>
+
+        <nav id="mobile-menu" class="hidden lg:hidden bg-warm-50/95 backdrop-blur-md border-b border-sage-100 px-5 sm:px-8 pt-4 pb-6 shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto" aria-label="手機導覽">
+            <div class="max-w-2xl mx-auto space-y-5">
+                <a href="news.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition"><i class="fa-solid fa-bullhorn text-sage-600 w-5 text-center"></i><span>最新消息</span></a>
+                <div>
+                    <p class="px-3 mb-2 text-xs font-semibold tracking-widest text-sage-600">治療所理念</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-1">
+                        <a href="about.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">創所理念</a>
+                        <a href="mission.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">使命願景</a>
+                        <a href="values.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">核心價值</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="px-3 mb-2 text-xs font-semibold tracking-widest text-sage-600">服務與預約</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1">
+                        <a href="services.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">服務項目</a>
+                        <a href="pricing.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">收費與時間</a>
+                        <a href="booking.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">預約流程</a>
+                        <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-xl text-sage-700 font-semibold hover:bg-sage-100/60 transition">初次預約表單</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="px-3 mb-2 text-xs font-semibold tracking-widest text-sage-600">認識治療所</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-1">
+                        <a href="team.html" class="px-3 py-2.5 rounded-xl bg-sage-100 text-sage-800 font-semibold transition">專業團隊</a>
+                        <a href="space.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">治療空間</a>
+                        <a href="contact.html" class="px-3 py-2.5 rounded-xl text-stone-700 hover:bg-sage-100/60 hover:text-sage-700 transition">聯絡資訊</a>
+                    </div>
+                </div>
+                <a href="https://forms.gle/BfYWZfs6cHMSk7dw9" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-sage-600 hover:bg-sage-700 text-white py-3 rounded-full text-sm font-medium shadow-sm transition">填寫初次預約單</a>
             </div>
         </nav>
     </header>
